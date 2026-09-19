@@ -4,11 +4,13 @@ import asyncio
 import time
 from importlib import import_module
 
-async_comprehension = import_module('1-async_comprehension').async_comprehension
+async_comprehension = import_module(
+    '1-async_comprehension'
+).async_comprehension
 
 
 async def measure_runtime() -> float:
-    """Measure the total runtime of running async_comprehension 4 times.
+    """Measure runtime of running async_comprehension four times.
 
     Returns:
         The total runtime in seconds.
